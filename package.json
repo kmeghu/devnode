@@ -1,0 +1,37 @@
+{
+  "name": "dev",
+  "version": "1.0.5",
+  "bin": {
+    "ctrl": "bin/ctrl"
+  },
+  "description": "Dev testing of classes with cli parsing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kellmant/devnode.git"
+  },
+  "keywords": [
+    "ctrl",
+    "api",
+    "classes",
+    "dev",
+    "infrastructure"
+  ],
+  "author": "kellman",
+  "license": "MIT",
+  "homepage": "https://github.com/kellmant/node#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "etcd-result-objectify": "^1.0.0",
+    "iorejson": "^0.1.1",
+    "minimist": "^1.2.0",
+    "node-etcd": "^5.1.0",
+    "redis": "^2.8.0",
+    "redis-jsonify": "^1.2.0",
+    "redis-rejson": "^1.0.0",
+    "redis-utils-json": "^1.0.0"
+  }
+}
