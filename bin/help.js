@@ -67,7 +67,7 @@
 
 		                          `,
 
-	keystore:`
+	keystore:`ed
 		ctrl keystore --[option] <setting>
 
 		 --keyhost ..... <hostname for etcd service>
