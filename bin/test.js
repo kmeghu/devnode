@@ -13,11 +13,11 @@ const cpLive = require('../fun/session')
 
 module.exports = async (args) => {
 	try {
-		const myThing = new Thing()
+		const myID = new ID()
 		myThing.print()
 		myThing.read()
-		await myThing.update()
-		await myThing.print()
+		await myID.update()
+		await myID.print()
 	} catch (err) {
 		console.log(err)
 	}
@@ -38,14 +38,14 @@ const scriptname = path.basename(__filename);
 const funcall = `../fun/${scriptname}`
 const myFunc = require(funcall)
 
-module.exports = class Thing {
+module.exports = class ID {
 
 	constructor(x) {
 		this.x = x
 	}
 
 	print () {
-		console.log(this)
+		console.log(test)
 		console.log('\n')
 		
 	}

@@ -12,8 +12,25 @@ module.exports = async (x) => {
 				cpRes.key = 'obj/tag/' + cpType + '/' + myObjs.uid
 				let cpData = new Objectclass(myObjs)
 				if (cpType == 'uid') {
-					cpRes.value = JSON.stringify(cpData.host(myObjs))
+					cpRes.value = JSON.stringify(cpData.uid(myObjs))
 					console.log()
-                }
-            
-            
+				} else if (cpType == 'network') {
+					cpRes.value = JSON.stringify(cpData.network(myObjs))
+					continue
+				} else if (cpType == 'group') {
+					cpRes.value = JSON.stringify(cpData.group(myObjs))
+					continue
+				} else if (cpType == 'address-range') {
+					cpRes.value = JSON.stringify(cpData.range(myObjs))
+					continue
+				} else {
+					cpRes.value = JSON.stringify(cpData.dump(myObjs))
+					continue
+				}
+			}
+		}
+		return
+	} catch (err) {
+		console.error(err)
+	}
+}
