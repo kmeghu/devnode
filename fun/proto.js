@@ -1,9 +1,9 @@
-const myfunction = require('SOMEFUNCTION')
+const findUID = require('/c/work/devnode/keystore.js')
 
 
-module.exports.FUNCTIONID = function (x) {
+module.exports.findUID = function (x) {
 	return new Promise(function(resolve, reject) {
-		myfunction(x)
+		findUID(x)
 		.then(function (value, err) {
 			if (err) {
 				reject(err)
